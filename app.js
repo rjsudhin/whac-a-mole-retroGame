@@ -8,6 +8,8 @@ const allBoards = document.querySelectorAll('.board')
 const btn = document.querySelector('.btn')
 
 let gamePoint = 0
+let maxTime = 15
+let gameTime = maxTime
 let gameStarts = null
 
 // when the stat game button clicks game started
@@ -26,7 +28,7 @@ function gettingRandomBoard() {
    console.log(randomBoard)
 }
 
-// adding points 
+// adding points user when click the mole
 allBoards.forEach((board) => {
    board.addEventListener('mousedown', function() {
       if (board.classList.contains('mole')) {
@@ -37,10 +39,17 @@ allBoards.forEach((board) => {
    })
 })
 
+// decreasing the time when the game starts
+function decreasingTime() {
+   gameTime--
+   timeDisplay.textContent = gameTime
+}
+
+
 
 function gameStarting() {
    // gameStarts = setInterval(gettingRandomBoard, 700)
-
+   // gameTimeCount = setInterval(decreasingTime, 500)
 }
 
 
