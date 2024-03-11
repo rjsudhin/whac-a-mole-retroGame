@@ -11,6 +11,7 @@ let gamePoint = 0
 let maxTime = 15
 let gameTime = maxTime
 let gameStarts = null
+let gameTimeCount = null
 
 // when the stat game button clicks game started
 btn.addEventListener('mousedown', function() {
@@ -43,13 +44,24 @@ allBoards.forEach((board) => {
 function decreasingTime() {
    gameTime--
    timeDisplay.textContent = gameTime
+
+   // when the time to zero the game will be end
+   if (gameTime == 0) {
+      // remove the mole in game when the game ends
+      allBoards.forEach((board) => {
+         board.classList.remove('mole')
+      })
+      clearInterval(gameStarts)
+      clearInterval(gameTimeCount)
+      console.log('the times up')
+   }
 }
 
 
 
 function gameStarting() {
-   // gameStarts = setInterval(gettingRandomBoard, 700)
-   // gameTimeCount = setInterval(decreasingTime, 500)
+   gameStarts = setInterval(gettingRandomBoard, 700)
+   gameTimeCount = setInterval(decreasingTime, 500)
 }
 
 
