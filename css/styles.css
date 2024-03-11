@@ -43,6 +43,11 @@ h1 {
    background-color: black;
 }
 
+.mole {
+   background: linear-gradient(lightgreen, green, lightblue)
+
+}
+
 button {
    display: block;
    width: 80%;

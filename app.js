@@ -26,7 +26,8 @@ function gettingRandomBoard() {
 
 
 function gameStarting() {
-   gameStarts = setInterval(gettingRandomBoard, 700)
+   // gameStarts = setInterval(gettingRandomBoard, 700)
+
 }
 
 
