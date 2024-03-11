@@ -44,8 +44,8 @@ h1 {
 }
 
 .mole {
-   background: linear-gradient(lightgreen, green, lightblue)
-
+   background: linear-gradient(lightgreen, green, lightblue);
+   cursor: pointer;
 }
 
 button {
