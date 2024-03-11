@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Whac-a-mole-auto generating game</title>
+      <link rel="stylesheet" href="css/styles.css">
+   </head>
+   <body>
+      
+      <h1>Whac-a-mole</h1>
+      <div id="game">
+         <!--game point and time left display-->
+         <p>point: <span id="point-display"></span></p>
+         <p>time Left: <span id="time-display"></span></p>
+
+         <div id="boards">
+            <div id="row">
+               <div id="1" class="board"></div>
+               <div id="2" class="board"></div>
+               <div id="3" class="board"></div>
+            </div>
+
+            <div id="row">
+               <div id="4" class="board"></div>
+               <div id="5" class="board"></div>
+               <div id="6" class="board"></div>
+            </div>
+
+            <div id="row">
+               <div id="7" class="board"></div>
+               <div id="8" class="board"></div>
+               <div id="9" class="board"></div>
+            </div>
+
+         </div>
+
+         <button class="btn">Start Game</button>
+      </div>
+
+      <script src="app.js"></script>
+   </body>
+</html>
