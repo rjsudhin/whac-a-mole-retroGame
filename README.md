@@ -20,10 +20,10 @@ Timer
 
 
 
-            Game Over
+Game Over
 The game ends when the timer reaches zero or if you miss too many moles. Your final score will be displayed.
 
-            Have Fun!
+Have Fun!
 Now that you know the basics, grab your virtual mallet, sharpen your reflexes, and enjoy playing Whac-A-Mole!
 
 
